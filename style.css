@@ -1,0 +1,266 @@
+@charset "UTF-8";
+/*font Variables*/
+/*Color Variables*/
+@import url("https://fonts.googleapis.com/css?family=Roboto:300i,400,400i,500,700,900");
+.multi_step_form {
+  background: #f6f9fb;
+  display: block;
+  overflow: hidden;
+}
+.multi_step_form #msform {
+  text-align: center;
+  position: relative;
+  padding-top: 50px;
+  min-height: 1200px;
+  max-width: 810px;
+  margin: 0 auto;
+  background: #ffffff;
+  z-index: 1;
+}
+.multi_step_form #msform .tittle {
+  text-align: center;
+  /* padding-bottom: 55px; */
+}
+.multi_step_form #msform .tittle h2 {
+  font: 500 24px/35px "Roboto", sans-serif;
+  color: #3f4553;
+  padding-bottom: 5px;
+}
+.multi_step_form #msform .tittle p {
+  font: 400 16px/28px "Roboto", sans-serif;
+  color: #5f6771;
+}
+.multi_step_form #msform fieldset {
+  border: 0;
+  padding: 20px 105px 0;
+  position: relative;
+  width: 100%;
+  left: 0;
+  right: 0;
+  padding-bottom: 30px;
+}
+.multi_step_form #msform fieldset:not(:first-of-type) {
+  display: none;
+}
+.multi_step_form #msform fieldset h3 {
+  font: 500 18px/35px "Roboto", sans-serif;
+  color: #000000;
+}
+.multi_step_form #msform fieldset h6 {
+  font: 400 15px/28px "Roboto", sans-serif;
+  color: #5f6771;
+  padding-bottom: 30px;
+}
+.multi_step_form #msform fieldset .form-group {
+  padding: 0 10px;
+}
+.multi_step_form #msform fieldset .fg_2, .multi_step_form #msform fieldset .fg_3 {
+  padding-top: 10px;
+  display: block;
+  overflow: hidden;
+}
+.multi_step_form #msform fieldset .fg_3 {
+  padding-bottom: 70px;
+}
+.multi_step_form #msform fieldset .form-control, .multi_step_form #msform fieldset .product_select {
+  border-radius: 12px;
+  border: 1px solid #a7b3be;
+  padding: 0 20px;
+  height: 45px;
+  font: 400 15px/48px "Roboto", sans-serif;
+  color: #000000;
+  box-shadow: none;
+  outline: none;
+  width: 100%;
+}
+
+.multi_step_form #msform fieldset .form-control:hover, .multi_step_form #msform fieldset .form-control:focus, .multi_step_form #msform fieldset .product_select:hover, .multi_step_form #msform fieldset .product_select:focus {
+  border-color: #a4017e;
+}
+.multi_step_form #msform fieldset .product_select:after {
+  display: none;
+}
+.multi_step_form #msform fieldset .product_select:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 20px;
+  font: normal normal normal 24px/48px Ionicons;
+  color: #5f6771;
+}
+.multi_step_form #msform fieldset .product_select .list {
+  width: 100%;
+}
+.multi_step_form #msform fieldset .done_text {
+  padding-top: 0px;
+}
+
+/* .multi_step_form #msform fieldset .code_group .form-control {
+  border: 0;
+  border-bottom: 1px solid #a1a7ac;
+  border-radius: 0;
+  display: inline-block;
+  width: 30px;
+  font-size: 30px;
+  color: #5f6771;
+  padding: 0;
+  margin-right: 7px;
+  text-align: center;
+  line-height: 1;
+} */
+
+.multi_step_form #msform fieldset .input-group {
+  padding-bottom: 40px;
+}
+.multi_step_form #msform fieldset .input-group .custom-file {
+  width: 100%;
+  height: auto;
+}
+.multi_step_form #msform fieldset .input-group .custom-file .custom-file-label {
+  width: 168px;
+  border-radius: 5px;
+  cursor: pointer;
+  font: 700 14px/40px "Roboto", sans-serif;
+  border: 1px solid #99a2a8;
+  text-align: center;
+  transition: all 300ms linear 0s;
+  color: #5f6771;
+  border-radius: 10px;
+}
+.multi_step_form #msform fieldset .input-group .custom-file .custom-file-label i {
+  font-size: 20px;
+  padding-right: 10px;
+}
+.multi_step_form #msform fieldset .input-group .custom-file .custom-file-label:hover, .multi_step_form #msform fieldset .input-group .custom-file .custom-file-label:focus {
+  background-image: linear-gradient(to bottom, #ec039d, #c90691, #a80883, #870873, #690662);
+  border-color: #9d7cf882;
+  color: #fff;
+}
+.multi_step_form #msform fieldset .input-group .custom-file input {
+  display: none;
+}
+
+.multi_step_form #msform #progressbar {
+  margin-bottom: 30px;
+  overflow: hidden;
+
+}
+.multi_step_form #msform #progressbar li {
+  list-style-type: none;
+  color: #99a2a8;
+  font-size: 9px;
+  width: calc(100%/3);
+  float: left;
+  position: relative;
+  font: 500 13px/1 "Roboto", sans-serif;
+  
+}
+.multi_step_form #msform #progressbar li:nth-child(2):before {
+  content: "";
+}
+.multi_step_form #msform #progressbar li:nth-child(3):before {
+  content: "";
+}
+.multi_step_form #msform #progressbar li:before {
+  content: "";
+  font: normal normal normal 30px/50px Ionicons;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  display: block;
+  background: #eaf0f4;
+  border-radius: 50%;
+  margin: 0 auto 10px auto;
+}
+.multi_step_form #msform #progressbar li:after {
+  content: "";
+  width: 100%;
+  height: 10px;
+  background: #eaf0f4;
+  position: absolute;
+  left: -50%;
+  top: 21px;
+  z-index: -1;
+}
+.multi_step_form #msform #progressbar li:last-child:after {
+  width: 150%;
+}
+
+.multi_step_form #msform #progressbar li.active:before, .multi_step_form #msform #progressbar li.active:after {
+  background-image: linear-gradient(to right, #c79292, #9a7379, #64253d, #520935, #d106c7c8);
+  color: white;
+}
+.multi_step_form #msform .action-button {
+  background-image: linear-gradient(to bottom, #ec039d, #c90691, #a80883, #870873, #690662);
+  color: white;
+  border: 0 none;
+  border-radius: 10px;
+  cursor: pointer;
+  min-width: 130px;
+  font: 700 14px/40px "Roboto", sans-serif;
+  border: 1px solid;
+  margin: 0 5px;
+  text-transform: uppercase;
+  display: inline-block;
+}
+.multi_step_form #msform .action-button:hover, .multi_step_form #msform .action-button:focus {
+  background: #585e62;
+  border-color: #575f64;
+}
+.multi_step_form #msform .previous_button {
+  background: transparent;
+  color: #83868a;
+  border-color: #83868a;
+}
+.multi_step_form #msform .previous_button:hover, .multi_step_form #msform .previous_button:focus {
+  background: #505a5f;
+  border-color: #54626a;
+  color: #fff;
+}
+strong
+{
+  color: red;
+}
+.inputBox {
+  position: relative;
+}
+
+.inputBox input {
+  padding: 0.525rem 20px;
+  font-size: 1rem;
+  letter-spacing: 0.062rem;
+  margin-bottom: 0.5rem;
+  border: 0.5px solid rgb(22, 11, 11);
+  background: transparent;
+  border-radius: 10px;
+  /* margin-left: 20px; */
+  width: 100%;
+}
+
+.inputBox label {
+  position: absolute;
+  top: 0;
+  left: 40px;
+  padding: 0.625rem 0;
+  font-size: 1rem;
+  color: rgb(97, 86, 95);
+  pointer-events: none;
+  transition: 0.5s;
+}
+
+.inputBox input:focus ~ label,
+.inputBox input:valid ~ label,
+.inputBox input:not([value=""]) ~ label {
+  top: -1.125rem;
+  left: 35px;
+  color: #36142f;
+  font-size: 0.85rem;
+  background-color: white;
+  height: 10px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+.inputBox input:focus {
+  outline: none;
+  border: 2px solid #841571;
+}
